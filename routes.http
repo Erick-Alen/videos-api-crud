@@ -1,0 +1,25 @@
+POST  http://localhost:8000/videos
+Content-type: application/json
+
+{
+    "title": "Video node",
+    "description": "Esse é o Video 01",
+    "duration": 180
+}
+
+###
+
+GET  http://localhost:8000/videos?search=node
+
+###
+PUT  http://localhost:8000/videos/67e2c673-94ff-4213-994f-b24007484f69
+Content-type: application/json
+
+{
+    "title": "Video node",
+    "description": "Esse é o Video node",
+    "duration": 180
+}
+
+###
+DELETE http://localhost:8000/videos/67e2c673-94ff-4213-994f-b24007484f69
